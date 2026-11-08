@@ -1,0 +1,7 @@
+# Linux / Colab only. Install in a separate Python 3.11 environment.
+# Let the converter resolve its compatible torch/tensorflow versions.
+litert-torch
+ai-edge-litert
+numpy
+Pillow
+torchvision

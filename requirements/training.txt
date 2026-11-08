@@ -1,0 +1,6 @@
+# Training / reference inference: Python 3.11 recommended.
+# Install CUDA-enabled PyTorch from pytorch.org if required by your GPU host.
+torch==2.8.0
+torchvision==0.23.0
+numpy==2.0.2
+Pillow==11.3.0

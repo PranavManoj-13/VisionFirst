@@ -1,0 +1,57 @@
+{
+  "environment": {
+    "litert-torch": "0.10.0",
+    "ai-edge-litert": "2.3.0",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "numpy": "1.26.4"
+  },
+  "format_version": 2,
+  "architecture": "mobilenet_v3_large_ordered_v2",
+  "preprocessing": "exif_transpose_rgb_bilinear_stretch_v2",
+  "model_file": "models/retinascan.tflite",
+  "sha256": "4f043b148d985abbd3ae7243e7c94f01c2e97efa1f686c315ab00220a4531cd3",
+  "checkpoint_sha256": "57bb266134650b7e1ae37ff41e89cebc5b76aecdd507295cf964a2df6204c270",
+  "size_bytes": 16930932,
+  "labels": [
+    "No DR",
+    "Mild",
+    "Moderate",
+    "Severe",
+    "Proliferative DR"
+  ],
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "float32",
+    "range": [
+      0,
+      255
+    ],
+    "channels": "RGB",
+    "resize": "EXIF orientation, RGB conversion, bilinear stretch to square; no crop or CLAHE",
+    "normalization": "Inside model; do not normalize in app"
+  },
+  "output": {
+    "shape": [
+      1,
+      4
+    ],
+    "meaning": "P(grade > k), k=0..3",
+    "grade": "count(probability > 0.5)",
+    "class_probabilities": "[1-p0, p0-p1, p1-p2, p2-p3, p3]"
+  },
+  "temperature": 0.7943282127380371,
+  "dataset_sha256": "082a1eeb60d15bd52f65a5f4d1801c74c4e0d3f36afa42a91cfa801afb9791e2",
+  "parity": {
+    "fixtures": 5,
+    "max_absolute_error": 2.384185791015625e-06,
+    "grade_agreement": true
+  },
+  "host_runtime_mean_ms": 7.431748600004084,
+  "timing_note": "Host only, not an Android benchmark"
+}

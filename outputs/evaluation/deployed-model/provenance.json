@@ -1,0 +1,12 @@
+{
+  "run": "/Users/pranav/Documents/VSCode/DSC4109-Proj/outputs/runs/20261108T074317_338859Z",
+  "checkpoint_sha256": "57bb266134650b7e1ae37ff41e89cebc5b76aecdd507295cf964a2df6204c270",
+  "app_model_sha256": "4f043b148d985abbd3ae7243e7c94f01c2e97efa1f686c315ab00220a4531cd3",
+  "split": "test",
+  "n": 723,
+  "selected_epoch": 5,
+  "model_bytes": 16930932,
+  "matplotlib": "3.9.4",
+  "numpy": "2.4.6",
+  "note": "Saved original-checkpoint test predictions; app uses parity-checked LiteRT conversion. No inference rerun."
+}

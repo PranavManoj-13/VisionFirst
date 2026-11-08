@@ -1,0 +1,11 @@
+{
+  "temperature": 0.7943282127380371,
+  "method": "validation ordinal BCE grid search",
+  "range": [
+    0.1,
+    10.0
+  ],
+  "before_bce": 0.21415676176548004,
+  "after_bce": 0.21120841801166534,
+  "at_search_boundary": false
+}

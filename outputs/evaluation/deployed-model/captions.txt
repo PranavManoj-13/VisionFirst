@@ -1,0 +1,17 @@
+01_metrics_summary: Exact-grade accuracy, macro-F1, and QWK; sensitivity/specificity use grade ≥ 2.
+
+02_confusion_counts: Rows are true grades; columns are predictions. Orange cells are exact matches.
+
+03_confusion_normalized: Rows are true grades; columns are predictions. Orange cells are exact matches.
+
+04_per_class_metrics: Precision, recall, and F1 for each grade; includes class support.
+
+05_ordinal_roc: ROC curves use cumulative probabilities P(grade ≥ threshold), not class one-vs-rest probabilities.
+
+06_training_history: Epoch 5 was selected by validation QWK; training ended after epoch 10.
+
+07_grade_error_distribution: Error 0 is exact; ±1 is an adjacent-grade error. Direction distinguishes undergrading from overgrading.
+
+08_split_distribution: Pixel-identical groups stay together; 62 conflicting-label images were excluded. Patient IDs are unavailable.
+
+Scope: saved held-out PyTorch checkpoint evaluation for the original ordinal model deployed via LiteRT. These are not classification-experiment results. Android conversion/device parity does not constitute a second full-test evaluation. Test metrics are already observed; use validation for any subsequent tuning. Pixel grouping does not guarantee patient independence.

@@ -1,0 +1,27 @@
+{
+  "app_name": "VisionFirst",
+  "architecture": "mobilenet_v3_large_ordered_v2",
+  "artifacts": {
+    "checkpoint": {
+      "path": "outputs/runs/20261108T074317_338859Z/checkpoints/best.pt",
+      "sha256": "57bb266134650b7e1ae37ff41e89cebc5b76aecdd507295cf964a2df6204c270"
+    },
+    "mobile_model": {
+      "path": "outputs/exports/deployed-model/models/retinascan.tflite",
+      "sha256": "4f043b148d985abbd3ae7243e7c94f01c2e97efa1f686c315ab00220a4531cd3"
+    },
+    "android_asset": {
+      "path": "android-app/app/src/main/assets/visionfirst.tflite",
+      "sha256": "4f043b148d985abbd3ae7243e7c94f01c2e97efa1f686c315ab00220a4531cd3"
+    },
+    "apk": {
+      "path": "outputs/apk/VisionFirst-debug.apk",
+      "sha256": "255b57efb0178b4bfe9f15b90f668e95a8e00cbbd6fa92a5e2947d4d7a443e3c"
+    }
+  },
+  "training_run": "outputs/runs/20261108T074317_338859Z",
+  "evaluation": "outputs/evaluation/deployed-model",
+  "export": "outputs/exports/deployed-model",
+  "apk_signing": "debug",
+  "prediction_rule": "count of cumulative probabilities strictly greater than 0.5"
+}

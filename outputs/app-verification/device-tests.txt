@@ -1,0 +1,6 @@
+VisionFirst device verification
+LiteRT 1.4.2 CPU interpreter
+ModelParityTest.exportedInputsMatchPython: PASS (5 fixtures, absolute tolerance 1e-4, exact grade agreement)
+ModelParityTest.resizeMatchesPillow: PASS (upsample 224, downsample 11, exact pixel agreement)
+Instrumentation: OK (2 tests), 0.633 seconds total (not an inference benchmark).
+Visual inspection not performed; app-opening request declined.
